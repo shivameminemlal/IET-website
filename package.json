@@ -1,0 +1,44 @@
+{
+  "name": "node-blog",
+  "version": "1.0.0",
+  "description": "A blog built in node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "engines": {
+    "node": "8.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahi9935/node-blog.git"
+  },
+  "author": "SHAHI9935",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shahi9935/node-blog/issues"
+  },
+  "homepage": "https://github.com/Shahi9935/node-blog#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "fs": "0.0.1-security",
+    "jquery": "^3.3.1",
+    "mongodb": "^3.0.3",
+    "mongoose": "^5.4.1",
+    "npm-install-all": "^1.1.21",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4",
+    "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "workbox-build": "^3.6.3"
+  }
+}

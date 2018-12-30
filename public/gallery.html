@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery | IET</title>
+  <!-- <title>City Capture</title> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation-floata.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="css/newgal.css">
+      <link rel="shortcut icon" href="ietfavicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="./css/footer.css">
+      <link rel="stylesheet" href="css/gallery.css">
+      <link rel="stylesheet" href="css/ContactUs.css">
+      <link rel="stylesheet" href="css/nav.css">
+
+
+</head>
+
+
+<body class="container-fluid" style="background-image:url('images/background/gallery.jpg');background-size: 100%;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;">
+
+  <!--NAVBAR-->
+  <div class="navigation" style="margin-top:20px;">
+  <div class="brand">
+        <a href="../"  style="float:left;"><img src="images/nav/IET.png"></a>
+      </div>
+    <div class="nav-container">
+
+      <nav>
+        <div class="nav-mobile" style="margin-top:20px"><a id="nav-toggle" href="#"><span></span></a></div>
+        <ul class="nav-list" style="background-color:black">
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li>
+            <a href="about-us">About Us</a>
+          </li>
+          <li>
+            <a href="events">Events And Workshops</a>
+          </li>
+          <li>
+            <a href="gallery"  class="active-nav">Gallery</a>
+          </li>
+          <li>
+            <a href="contact">Contact Us</a>
+          </li>
+		  <li>
+          <a href="techdesk">Techdesk</a>
+        </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--NAVBAR ENDS-->
+<br>
+  <!-- <header class="callout large primary">
+  <div class="grid-container"> -->
+    <h3 class="display-4 text-center" style="color: #fff;">
+      <span><i class="fi-camera"></i></span> Gallery
+    </h3>
+    <!-- <h4 class="display-3 text-center" class="subheader">IET (UK) Students' Chapter BIT Mesra.</h4> -->
+    <!--<base href="images/gallery-caraousel/1.jpg">-->
+    <div id="carousel"><!-- Images be 960 X 640 px-->
+      <figure id="spinner">
+        <img src="images/gallery-caraousel/1.jpg" alt>
+        <img src="images/gallery-caraousel/2.jpg" alt>
+        <img src="images/gallery-caraousel/3.jpg" alt>
+        <img src="images/gallery-caraousel/4.jpg" alt>
+        <img src="images/gallery-caraousel/5.jpg" alt>
+        <img src="images/gallery-caraousel/6.jpg" alt>
+        <img src="images/gallery-caraousel/7.jpg" alt>
+        <img src="images/gallery-caraousel/8.jpg" alt>
+      </figure>
+    </div>
+    <span style="float:left;color:steelblue;" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+    <span style="float:right;color:steelblue;" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+  </div>
+<!-- </header> -->
+
+<main>
+
+  <div class="grid-container grid-container-padded">
+
+    <!-- Menu -->
+    <div class="row" style="color:#fff;">
+      <div class="column col-sm-4">
+        <div class="filter-info">
+          <p>Currently showing: <em><span id="current-content">All</span></em></p>
+        </div>
+      </div>
+
+      <!-- <div class="small-8 column clearfix">
+        <div class="float-right filter-options">
+          <a class="button gallery-button" href="#">Filter</a>
+        </div>
+      </div> -->
+
+      <div class=" clearfix col-sm-8">
+        <div class="float-right gallery-menu">
+          <ul class="menu align-right">
+            <li><a id="all" href="#">All</a></li>
+            <li><a id="events" href="#">EVENTS</a></li>
+            <li><a id="workshops" href="#">WORKSHOPS</a></li>
+            <li><a id="swag" href="#">SWAG</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- add extra container element for Masonry -->
+    <div class="grid row">
+
+      <!-- add sizing element for columnWidth -->
+      <div class="grid-sizer column col-sm-6 col-md-4 col-lg-3"></div>
+      <!-- items use Bootstrap .col- classes -->
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/01.jpeg" data-lightbox="images" data-title="Codec">
+          <!-- wrap item content in its own element -->
+          <img class="grid-item-content" src="images/Events/01.jpeg" alt="Codec">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/02.jpeg" data-lightbox="images" data-title="UnZip Me">
+          <img class="grid-item-content" src="images/Events/02.jpeg" alt="UnZip Me">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/19.jpeg" data-lightbox="images" data-title="Dabb, IET 2K14">
+          <img class="grid-item-content" src="images/swag/19.jpeg" alt="Dabb, IET 2K14">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/10.jpeg" data-lightbox="images" data-title="C/C++ Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/10.jpeg" alt="C/C++ Workshop">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/11.jpeg" data-lightbox="images" data-title="Python Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/11.jpeg" alt="Python Workshop">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/20.jpeg" data-lightbox="images" data-title="IET K14 & K15">
+          <img class="grid-item-content" src="images/swag/20.jpeg" alt="IET K14 & K15">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/03.jpeg" data-lightbox="images" data-title="Google It Out">
+          <img class="grid-item-content" src="images/Events/03.jpeg" alt="Google It Out">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/21.jpeg" data-lightbox="images" data-title="After Meeting Fun">
+          <img class="grid-item-content" src="images/swag/21.jpeg" alt="After Meeting Fun">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/04.jpeg" data-lightbox="images" data-title="Codec">
+          <img class="grid-item-content" src="images/Events/04.jpeg" alt="Codec">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/12.jpeg" data-lightbox="images" data-title="Python & Flask Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/12.jpeg" alt="Python & Flask Workshop">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/05.jpeg" data-lightbox="images" data-title="BrainFookers">
+          <img class="grid-item-content" src="images/Events/05.jpeg" alt="BrainFookers">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/22.jpeg" data-lightbox="images" data-title="After Meeting Fun">
+          <img class="grid-item-content" src="images/swag/22.jpeg" alt="After Meeting Fun">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/13.jpeg" data-lightbox="images" data-title="GIT & GSoc Talk">
+          <img class="grid-item-content" src="images/workshopsimg/13.jpeg" alt="GIT & GSoc Talk">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/14.jpeg" data-lightbox="images" data-title="Android Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/14.jpeg" alt="Android Workshop">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/06.jpeg" data-lightbox="images" data-title="Blitzkrieg">
+          <img class="grid-item-content" src="images/Events/06.jpeg" alt="Blitzkrieg">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/15.jpeg" data-lightbox="images" data-title="Android Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/15.jpeg" alt="Android Workshop">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/07.jpeg" data-lightbox="images" data-title="Event Organizers">
+          <img class="grid-item-content" src="images/Events/07.jpeg" alt="Event Organizers">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/08.jpeg" data-lightbox="images" data-title="The UltimateEngineer">
+          <img class="grid-item-content" src="images/Events/08.jpeg" alt="The UltimateEngineer">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/23.jpeg" data-lightbox="images" data-title="IET 2K14, Pantheon 2017">
+          <img class="grid-item-content" src="images/swag/23.jpeg" alt="IET 2K14, Pantheon 2017">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/16.jpeg" data-lightbox="images" data-title="Web Development Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/16.jpeg" alt="Web Development Workshop">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/09.jpeg" data-lightbox="images" data-title="The IET Team">
+          <img class="grid-item-content" src="images/Events/09.jpeg" alt="The IET Team">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/17.jpeg" data-lightbox="images" data-title="Web Development Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/17.jpeg" alt="Web Development Workshop">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/24.jpeg" data-lightbox="images" data-title="IET Executive Body, Pantheon 2017">
+          <img class="grid-item-content" src="images/swag/24.jpeg" alt="IET Executive Body, Pantheon 2017">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/25.jpeg" data-lightbox="images" data-title="The IET Team, Bitotsav 2018">
+          <img class="grid-item-content" src="images/swag/25.jpeg" alt="The IET Team, Bitotsav 2018">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column  swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/26.jpeg" data-lightbox="images" data-title="The IET Team, Bitotsav 2018">
+          <img class="grid-item-content" src="images/swag/26.jpeg" alt="The IET Team, Bitotsav 2018">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/18.jpeg" data-lightbox="images" data-title="Tech Talk">
+          <img class="grid-item-content" src="images/workshopsimg/18.jpeg" alt="Tech Talk">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/3.jpeg" data-lightbox="images" data-title="Web Development Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/3.jpeg" alt="Web Development Workshop">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column events col-sm-6 col-md-4 col-lg-3">
+        <a href="images/Events/4.jpeg" data-lightbox="images" data-title="Google It Out">
+          <img class="grid-item-content" src="images/Events/4.jpeg" alt="Google It Out">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/27.jpeg" data-lightbox="images" data-title="The IET Team, Bitotsav 2018">
+          <img class="grid-item-content" src="images/swag/27.jpeg" alt="The IET Team, Bitotsav 2018">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/1.jpeg" data-lightbox="images" data-title="IET 2K12 Farewell">
+          <img class="grid-item-content" src="images/swag/1.jpeg" alt="IET 2K12 Farewell">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/2.jpeg" data-lightbox="images" data-title="IET Core Members 2014-2016">
+          <img class="grid-item-content" src="images/swag/2.jpeg" alt="IET Core Members 2014-2016">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/4.jpeg" data-lightbox="images" data-title="Linux Workshop DAB">
+          <img class="grid-item-content" src="images/swag/4.jpeg" alt="Linux Workshop DAB">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/7.jpeg" data-lightbox="images" data-title="IET 2K13 Farewell">
+          <img class="grid-item-content" src="images/swag/7.jpeg" alt="IET 2K13 Farewell">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column swag col-sm-6 col-md-4 col-lg-3">
+        <a href="images/swag/6.jpeg" data-lightbox="images" data-title="The IET Team, Pantheon 2017">
+          <img class="grid-item-content" src="images/swag/6.jpeg" alt="The IET Team, Pantheon 2017">
+        </a>
+      </div>
+
+      <div class="grid-item small-6 medium-4 large-3 column workshops col-sm-6 col-md-4 col-lg-3">
+        <a href="images/workshopsimg/1.jpeg" data-lightbox="images" data-title="Web Development Workshop">
+          <img class="grid-item-content" src="images/workshopsimg/1.jpeg" alt="Web Development Workshop">
+        </a>
+      </div>
+
+      <!-- <div class="grid-item small-6 medium-4 large-3 column namibia events">
+        <a href="https://c2.staticflickr.com/6/5336/17172901306_88decca7a4_h.jpg" data-lightbox="images" data-title="Windhoek, Namibia">
+          <img class="grid-item-content" src="https://c2.staticflickr.com/6/5336/17172901306_88decca7a4_h.jpg" alt="Windhoek, Namibia">
+        </a>
+      </div> -->
+    </div>
+
+  </div>
+
+
+
+    <!-- Footer Starts -->
+      <footer class="footer-display">
+
+        <div class="row">
+          <div class="col-sm-2"><center><a target="_blank" href="https://www.facebook.com/ietbitmesra/" ><img src="./images/icon_white.png" class="mr-auto ml-auto footer-icon"></a></center></div>
+          <div class="col-sm-8">
+            <center>
+                <h2 class="font-text">Institution Of Engineering And Technology (UK)<br>Students' Chapter, BIT Mesra</h2>
+                <h4 class="link-footer"><a href="../" class="no-decoration">Home</a> | <a href="about-us" class="no-decoration">About Us</a> | <a href="events" class="no-decoration">Events And Workshops</a> | <a class="no-decoration" href="gallery">Gallery</a> | <a href="contact" class="no-decoration">Contact Us</a> | <a href="register" class="no-decoration">Register</a></h4>
+            </center>
+          </div>
+          <div class="col-sm-2"><center><a target="_blank" href="http://bitmesra.ac.in/"><img href="http://bitmesra.ac.in/" src="./images/bit_logo.png" class="mr-auto ml-auto footer-icon"></a></center></div>
+        </div>
+      </footer>
+       <!--Footer Ends -->
+
+  <!-- isotope
+  infinite scroll -->
+
+</main>
+
+<script>
+ var angle = 0;
+function galleryspin(sign) {
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+$(document).ready(function() {
+
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+<script type="text/javascript" src="js/gallery.js"></script>
+  <script  src="js/nav.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'></script>
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.js'></script>
+
+
+
+    <script  src="js/gallery1.js"></script>
+
+
+
+
+</body>
+
+</html>

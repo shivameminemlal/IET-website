@@ -1,0 +1,52 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* header */
+header {
+  text-align: center;
+}
+
+/* menu */
+.menu {
+  margin: 10px 0;
+}
+/* .filter-info p {
+  font-size: 14px;
+  padding-top: 8px;
+  padding-left: 5px;
+} */
+
+/* .gallery-button {
+  background-color: black;
+  color: #fff;
+} */
+
+.gallery-menu{
+
+  display: block;
+}
+
+.content-menu ul li a {
+  color: steelblue;
+}
+
+.content-menu ul li a#all {
+  color: steelblue;
+}
+
+#current-content {
+  color: white;
+  text-transform: capitalize;
+}
+
+/* Masonry styles */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item-content {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,212 @@
+body{
+	background-color: black;
+	color: white;
+}
+::-moz-selection { background: transparent;
+color:white;
+ }
+::selection { background: transparent;
+color:white; }
+div#carousel {
+  perspective: 1200px;
+  background: transparent;
+  padding-top: 2%;
+  font-size:0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+.this-img{
+margin-bottom:20px;
+position:relative;
+}
+.this-img:hover{
+transform:rotateY(180deg);
+
+transition:1s;
+transition-timing-function:ease-in;
+}
+
+
+
+
+.hulla{
+margin-left:20px;
+margin-right:20px;
+}
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+figure#spinner img {
+  width: 40%; max-width: 425px;
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent;
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg);
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span {
+  color: #fff;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -6rem;
+  border-bottom: none;
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+
+
+
+
+a.lightbox img {
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+z-index:2;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+.lightbox-target1:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target1:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target1:target a.lightbox-close {
+top: 0px;
+}
+
+.lightbox-target1{
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,0.9);
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}

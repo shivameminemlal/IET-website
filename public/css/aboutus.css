@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+body{
+color:#000;
+background-color:#3b3c3d;
+}
+a{
+text-decoration:none;
+color:white;
+}
+a:link {
+    text-decoration: none;
+}
+.myimage2{
+margin-left:auto;
+margin-right:auto;
+border-radius:50%;
+width:80%;
+height:80%;
+}
+.pad{
+padding-top:30px;
+
+}
+.hulla{
+margin-left:auto;
+margin-right:auto;
+}
+.mainrow{
+padding-left:10px;
+padding-right:10px;
+}
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+	color:white;
+}
+
+a:active {
+    text-decoration: none;
+}
+.container {
+  position: relative;
+  width: 220px;
+  padding:10px;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.about-div
+{
+  margin-top: 40px;
+
+}
+.head-about-us{
+font-family: 'Kavivanar', cursive;
+font-weight:900;
+}
